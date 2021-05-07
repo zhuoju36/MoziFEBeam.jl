@@ -1,6 +1,8 @@
+module MoziFEBeam
 export Beam
+export integrateK,integrateKσ,integrateM,integrateP,static_condensation
 
-mutable struct Beam <: AbstractElement
+mutable struct Beam 
     id::String
     hid::Int
     node1::Node
@@ -93,4 +95,4 @@ function integrateP(beam::Beam,beam_force)::Vector{Float64}
     end
 end
 
-# end
+end
