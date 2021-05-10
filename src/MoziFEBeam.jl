@@ -38,6 +38,7 @@ function Beam(id,hid,node1,node2,material,section;elm_type="eular_shear",mass_ty
     Beam(string(id),hid,node1,node2,material,section,release,elm_type,mass_type,(pt1+pt2)/2,l,T)
 end
 
+#We include different kinds of element here.
 for (root,dirs,files) in walkdir(joinpath(@__DIR__,"beams"))
     for file in files
         if file[end-2:end]==".jl"
