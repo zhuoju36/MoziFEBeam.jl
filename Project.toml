@@ -2,3 +2,10 @@ name = "MoziFEBeam"
 uuid = "0c34b015-d3d1-4a2b-babd-753ff7c11902"
 authors = ["HZJ <zhuoju36@hotmail.com>"]
 version = "0.1.0"
+
+[deps]
+MoziFENode = "bc5e1aea-ccfc-42b4-a639-d0a9cb9ca5ed"
+MoziFESection = "14b8622a-036d-4d33-8a6e-103eec319ccf"
+
+[compat]
+julia = "1"

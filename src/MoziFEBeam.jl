@@ -1,4 +1,7 @@
 module MoziFEBeam
+using MoziFENode: Node
+using MoziFEMaterial: Material
+using MoziFESection: BeamSection
 export Beam
 export integrateK,integrateKσ,integrateM,integrateP,static_condensation
 
@@ -96,4 +99,4 @@ function integrateP(beam::Beam,beam_force)::Vector{Float64}
     end
 end
 
-end
+end#module
